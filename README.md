@@ -1,5 +1,5 @@
 # frontend-project-lvl1
 
-<a href="https://codeclimate.com/github/codeclimate/codeclimate/maintainability"><img src="https://api.codeclimate.com/v1/badges/a99a88d28ad37a79dbf6/maintainability" /></a>
+[![Maintainability](https://api.codeclimate.com/v1/badges/dfc50c2d88cd46d069c1/maintainability)](https://codeclimate.com/github/BobrovKirill/frontend-project-lvl1/maintainability)
 
-https://github.com/<OWNER>/<REPOSITORY>/workflows/<WORKFLOW_NAME>/badge.svg
+[![Node CI](https://github.com/BobrovKirill/frontend-project-lvl1/workflows/CI-project/badge.svg)](https://github.com/BobrovKirill/frontend-project-lvl1/actions)
