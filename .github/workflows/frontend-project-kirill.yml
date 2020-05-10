@@ -1,0 +1,25 @@
+
+name: CI-project
+
+on: [push]
+
+jobs:
+  build:
+    
+    runs-on: ubuntu-latest
+    
+    steps:
+
+    - uses: actions/checkout@v2
+
+    - name: istall packege
+      run: |
+        make install
+
+    - name: Print Message
+      run: echo Linter started!
+
+
+    - name: linter start
+      run: |
+        make lint
