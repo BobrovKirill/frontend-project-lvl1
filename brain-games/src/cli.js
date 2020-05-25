@@ -10,9 +10,10 @@ const greeting = () => {
   return RequestName;
 };
 
+const RandomNum = () => Math.floor(Math.random() * 100);
 
 const RandomNumber = () => {
-  const RandomNumber = Math.floor(Math.random() * 100);
+  const RandomNumber = RandomNum();
   console.log(`Question: ${RandomNumber}`);
   const even = (readlineSync.question('Your answer: ')) == 'yes';
   if ((RandomNumber % 2) != even) {
@@ -29,15 +30,22 @@ const RandomSings = (arr) => {
 
 const RandomExpression = () => {
   const ArithmeticSigns = ['+', '-', '*'];
-  const StRandomNumber = Math.floor(Math.random() * 100);
-  const SdRandomNumber = Math.floor(Math.random() * 100);
+  const StRandomNumber = RandomNum();
+  const SdRandomNumber = RandomNum();
   const expression = (StRandomNumber + RandomSings(ArithmeticSigns) + SdRandomNumber);
   return expression;
 };
 
 const UserAnswer = () => (readlineSync.question('Your answer: '));
 
+const nod = (x, y) => {
+  if (y > 0) {
+    const z = x % y;
+    return nod(y, z);
+  }
+  return x;
+};
 
 export {
-  RandomExpression, greeting, RandomNumber, UserAnswer,
+  RandomExpression, greeting, RandomNumber, UserAnswer, RandomSings, nod, RandomNum,
 };

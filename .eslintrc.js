@@ -1,5 +1,5 @@
 module.exports = {
-    env: {
+    'env': {
         'es6': true,
         'node': true
     },
@@ -8,13 +8,12 @@ module.exports = {
         'Atomics': 'readonly',
         'SharedArrayBuffer': 'readonly'
     },
-     parserOptions: {
-        'ecmaVersion': 11,
+    'parserOptions': {
+        'ecmaVersion': 2018,
         'sourceType': 'module'
     },
     'rules': {
         'no-console': 'off',
-        'import/extensions': 'off',
-
+        'import/extensions': 'off'
     }
 };
