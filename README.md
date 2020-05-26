@@ -5,15 +5,20 @@
 
 [![Node CI](https://github.com/BobrovKirill/frontend-project-lvl1/workflows/CI-project/badge.svg)](https://github.com/BobrovKirill/frontend-project-lvl1/actions)
 
+## brain-even
 ```sh
-brain-even
+Игра для вычисления четного числа
 ```
-[![asciicast](https://asciinema.org/a/bXb5r7nZfiDZs0prXWzs5FEeM)
+[![asciicast](https://asciinema.org/a/bXb5r7nZfiDZs0prXWzs5FEeM)](https://asciinema.org/a/bXb5r7nZfiDZs0prXWzs5FEeM)
+
+## brain-calc
 ```sh
-brain-calc
+Игра для вычисления случайного арифметического значения
 ```
-[![asciicast](https://asciinema.org/a/22aAfRdPZj0058riOoQ6MMvvV)
+[![asciicast](https://asciinema.org/a/22aAfRdPZj0058riOoQ6MMvvV)](https://asciinema.org/a/22aAfRdPZj0058riOoQ6MMvvV)
+
+## brain-gcd
 ```sh
-brain-gcd
+Игра для вычесления общегого наибольшего делителя
 ```
-[![asciicast](https://asciinema.org/a/CvtOVE7XotXSQ2Oah6jAxZdHz)
+[![asciicast](https://asciinema.org/a/CvtOVE7XotXSQ2Oah6jAxZdHz)](https://asciinema.org/a/CvtOVE7XotXSQ2Oah6jAxZdHz)
