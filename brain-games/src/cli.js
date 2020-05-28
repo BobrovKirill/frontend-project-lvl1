@@ -1,3 +1,4 @@
+/* eslint-disable no-param-reassign */
 /* eslint-disable eqeqeq */
 /* eslint-disable no-shadow */
 // eslint-disable-next-line import/no-unresolved
@@ -10,7 +11,7 @@ const greeting = () => {
   return RequestName;
 };
 
-const RandomNum = () => Math.floor(Math.random() * 100);
+const RandomNum = (min = 1, max = 100) => Math.floor(Math.random() * (max - min) + min);
 
 const RandomNumber = () => {
   const RandomNumber = RandomNum();
@@ -46,6 +47,16 @@ const nod = (x, y) => {
   return x;
 };
 
+const progression = (start, step, long = 10) => {
+  const items = [start];
+  for (let i = 0; i < long - 1; i += 1) {
+    const num = start + step;
+    items.push(num);
+    start = num;
+  }
+  return items;
+};
+
 export {
-  RandomExpression, greeting, RandomNumber, UserAnswer, RandomSings, nod, RandomNum,
+  RandomExpression, greeting, RandomNumber, UserAnswer, RandomSings, nod, RandomNum, progression,
 };

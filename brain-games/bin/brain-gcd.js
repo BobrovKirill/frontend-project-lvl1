@@ -16,7 +16,7 @@ const Game = () => {
     console.log('Correct!');
   } else {
     // eslint-disable-next-line no-use-before-define
-    console.log((`"${Answer}" is wrong answer ;(. Correct answer was "${result}".Let\`s try again,${UserName}`));
+    console.log((`"${Answer}" is wrong answer ;(. Correct answer was "${result}".Let\`s try again, ${UserName}`));
   }
 };
 

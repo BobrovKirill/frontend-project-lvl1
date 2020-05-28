@@ -9,7 +9,7 @@
 ```sh
 Игра для вычисления четного числа
 ```
-[![asciicast](https://asciinema.org/a/bXb5r7nZfiDZs0prXWzs5FEeM)](https://asciinema.org/a/bXb5r7nZfiDZs0prXWzs5FEeM)
+[![asciicast play](https://asciinema.org/a/bXb5r7nZfiDZs0prXWzs5FEeM)](https://asciinema.org/a/bXb5r7nZfiDZs0prXWzs5FEeM)
 
 ## brain-calc
 ```sh
@@ -22,3 +22,9 @@
 Игра для вычесления общегого наибольшего делителя
 ```
 [![asciicast](https://asciinema.org/a/CvtOVE7XotXSQ2Oah6jAxZdHz)](https://asciinema.org/a/CvtOVE7XotXSQ2Oah6jAxZdHz)
+
+## brain-progression
+```sh
+Игра для вычесления пропущеного числа арифметической прогрессии
+```
+[![asciicast](https://asciinema.org/a/SBWQC2SQIUQ7yRJG6oWpgcvJM)](https://asciinema.org/a/SBWQC2SQIUQ7yRJG6oWpgcvJM)

@@ -8,7 +8,10 @@ brain-calc:
 	node brain-games/bin/brain-calc.js
 
 brain-gcd:
-	node brain-games/bin/brain-gcd
+	node brain-games/bin/brain-gcd.js
+
+brain-progression:
+	node brain-games/bin/brain-progression.js	
 
 publish:
 	npm publish --dry-run
