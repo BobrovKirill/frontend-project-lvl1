@@ -57,6 +57,19 @@ const progression = (start, step, long = 10) => {
   return items;
 };
 
+const SimpleNumber = (num) => {
+  if (num === 1) {
+    return 'yes';
+  }
+  for (let i = 2; i < num; i += 1) {
+    if (num % i === 0) {
+      return 'no';
+    }
+  }
+  return 'yes';
+};
+
 export {
-  RandomExpression, greeting, RandomNumber, UserAnswer, RandomSings, nod, RandomNum, progression,
+  // eslint-disable-next-line max-len
+  RandomExpression, greeting, RandomNumber, UserAnswer, RandomSings, nod, RandomNum, progression, SimpleNumber,
 };

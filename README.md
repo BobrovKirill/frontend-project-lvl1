@@ -28,3 +28,9 @@
 Игра для вычесления пропущеного числа арифметической прогрессии
 ```
 [![asciicast](https://asciinema.org/a/SBWQC2SQIUQ7yRJG6oWpgcvJM)](https://asciinema.org/a/SBWQC2SQIUQ7yRJG6oWpgcvJM)
+
+## brain-prime
+```sh
+Игра для проверки простое ли число
+```
+[![asciicast](??)](..)
