@@ -1,7 +1,4 @@
-/* eslint-disable no-param-reassign */
-/* eslint-disable eqeqeq */
-/* eslint-disable no-shadow */
-// eslint-disable-next-line import/no-unresolved
+
 import readlineSync from 'readline-sync';
 
 const greeting = () => {
@@ -14,10 +11,10 @@ const greeting = () => {
 const RandomNum = (min = 1, max = 100) => Math.floor(Math.random() * (max - min) + min);
 
 const RandomNumber = () => {
-  const RandomNumber = RandomNum();
-  console.log(`Question: ${RandomNumber}`);
-  const even = (readlineSync.question('Your answer: ')) == 'yes';
-  if ((RandomNumber % 2) != even) {
+  const Random = RandomNum();
+  console.log(`Question: ${Random}`);
+  const even = (readlineSync.question('Your answer: ')) === 'yes';
+  if ((Random % 2) !== even) {
     return true;
   } return false;
 };
@@ -52,6 +49,7 @@ const progression = (start, step, long = 10) => {
   for (let i = 0; i < long - 1; i += 1) {
     const num = start + step;
     items.push(num);
+    // eslint-disable-next-line no-param-reassign
     start = num;
   }
   return items;
