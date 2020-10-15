@@ -1,8 +1,8 @@
 import { makeRandomNum } from '../cli.js';
 import playGame from '../index.js';
 
-const quest = ('What number is missing in the progression?');
-const progressionLenght = 9;
+const taskGame = ('What number is missing in the progression?');
+const progressionLenght = 10;
 
 const makeProgression = (start, step, long = 10) => {
   let items = [];
@@ -17,11 +17,11 @@ const makeProgressionAnswer = () => {
   const step = makeRandomNum();
   const questionNum = makeRandomNum(1, progressionLenght);
   const progressionList = makeProgression(start, step);
-  const trueNum = progressionList[questionNum];
+  const answer = progressionList[questionNum];
   progressionList[questionNum] = '..';
   const question = (progressionList.join(','));
 
-  return [String(trueNum), question];
+  return [String(answer), question];
 };
 
-export default () => playGame(makeProgressionAnswer, quest);
+export default () => playGame(makeProgressionAnswer, taskGame);

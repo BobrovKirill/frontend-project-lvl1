@@ -1,22 +1,22 @@
 import { makeRandomNum } from '../cli.js';
 import playGame from '../index.js';
 
-const quest = 'Find the greatest common divisor of given numbers.';
+const taskGame = 'Find the greatest common divisor of given numbers.';
 
-const nod = (firstRandomNumber, secondRandomNumber) => {
-  if (secondRandomNumber > 0) {
-    const temp = firstRandomNumber % secondRandomNumber;
-    return nod(secondRandomNumber, temp);
+const nod = (num1, num2) => {
+  if (num2 > 0) {
+    const temp = num1 % num2;
+    return nod(num2, temp);
   }
-  return firstRandomNumber;
+  return num1;
 };
 
 const makeGcd = () => {
-  const firstRandomNumber = makeRandomNum();
-  const secondRandomNumber = makeRandomNum();
-  const result = nod(firstRandomNumber, secondRandomNumber);
-  const question = (firstRandomNumber, secondRandomNumber);
+  const randomNum1 = makeRandomNum();
+  const randomNum2 = makeRandomNum();
+  const result = nod(randomNum1, randomNum2);
+  const question = (randomNum1, randomNum2);
   return [String(result), question];
 };
 
-export default () => playGame(makeGcd, quest);
+export default () => playGame(makeGcd, taskGame);

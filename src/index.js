@@ -1,19 +1,20 @@
 import readlineSync from 'readline-sync';
 
-const userTry = 3;
+const roundsCount = 3;
 
-export default (gameEngine, quest) => {
+export default (getGameTask, quest) => {
   console.log('Welcome to the Brain Games!');
   const requestName = readlineSync.question('May I have your name? ');
   console.log(`Hello, ${requestName}!`);
   console.log(quest);
 
-  for (let i = 0; i < userTry; i += 1) {
-    const [answer, question] = gameEngine();
+  for (let i = 0; i < roundsCount; i += 1) {
+    const [answer, question] = getGameTask();
     console.log(`Question: ${question}`);
     const userAnswer = readlineSync.question('Your answer: ');
     if (answer !== userAnswer) {
-      console.log(`"${userAnswer}" is wrong answer ;(. Correct answer was "${answer}".Let\`s try again, ${requestName}`);
+      console.log(`"${userAnswer}" is wrong answer ;(. Correct answer was "${answer}".`);
+      console.log(`Let\`s try again, ${requestName}`);
       return;
     }
     console.log('Correct!');

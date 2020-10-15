@@ -1,7 +1,7 @@
 import { makeRandomNum } from '../cli.js';
 import playGame from '../index.js';
 
-const quest = 'Answer "yes" if the number is even, otherwise answer "no".';
+const taskGame = 'Answer "yes" if the number is even, otherwise answer "no".';
 
 const makeEven = () => {
   const question = makeRandomNum();
@@ -9,4 +9,4 @@ const makeEven = () => {
   return [answer, question];
 };
 
-export default () => playGame(makeEven, quest);
+export default () => playGame(makeEven, taskGame);
