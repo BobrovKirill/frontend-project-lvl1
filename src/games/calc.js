@@ -4,15 +4,16 @@ import playGame from '../index.js';
 const taskGame = 'What is the result of the expression?';
 const arithmeticSigns = ['+', '-', '*'];
 
-const calc = (num1, num2, operator) => {
+// eslint-disable-next-line consistent-return
+const calc = (firstNum, secondNum, operator) => {
   if (operator === '+') {
-    return num1 + num2;
+    return firstNum + secondNum;
   }
   if (operator === '-') {
-    return num1 - num2;
+    return firstNum - secondNum;
   }
   if (operator === '*') {
-    return num1 * num2;
+    return firstNum * secondNum;
   }
 };
 
