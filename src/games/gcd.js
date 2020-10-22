@@ -3,12 +3,12 @@ import playGame from '../index.js';
 
 const taskGame = 'Find the greatest common divisor of given numbers.';
 
-const nod = (firstNum, secondNum2) => {
-  if (secondNum2 > 0) {
-    const temp = firstNum % secondNum2;
-    return nod(secondNum2, temp);
+const nod = (firstNumber, secondNumber) => {
+  if (secondNumber > 0) {
+    const temp = firstNumber % secondNumber;
+    return nod(secondNumber, temp);
   }
-  return firstNum;
+  return firstNumber;
 };
 
 const makeGcd = () => {

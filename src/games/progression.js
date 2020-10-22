@@ -15,11 +15,11 @@ const makeProgression = (start, step, length = 10) => {
 const makeProgressionAnswers = () => {
   const start = makeRandomNum();
   const step = makeRandomNum();
-  const questionNum = makeRandomNum(1, progressionLenght);
-  const progressionList = makeProgression(start, step);
-  const answer = progressionList[questionNum];
-  progressionList[questionNum] = '..';
-  const question = (progressionList.join(','));
+  const correctAnswer = makeRandomNum(1, progressionLenght);
+  const progression = makeProgression(start, step);
+  const answer = progression[correctAnswer];
+  progression[correctAnswer] = '..';
+  const question = (progression.join(','));
 
   return [String(answer), question];
 };

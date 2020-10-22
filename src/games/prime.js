@@ -16,9 +16,9 @@ const isSimpleNumber = (num) => {
 };
 
 const makePrime = () => {
-  const randomNumber = makeRandomNum();
-  const trueAnswer = isSimpleNumber(randomNumber) ? 'yes' : 'no';
-  return [trueAnswer, randomNumber];
+  const question = makeRandomNum();
+  const correctAnswer = isSimpleNumber(question) ? 'yes' : 'no';
+  return [correctAnswer, question];
 };
 
 export default () => playGame(makePrime, taskGame);

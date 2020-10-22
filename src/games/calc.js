@@ -22,9 +22,9 @@ const makeCalc = () => {
   const randomNum1 = makeRandomNum();
   const randomNum2 = makeRandomNum();
   const question = `${randomNum1}${randomOperator}${randomNum2}`;
-  const expression = calc(randomNum1, randomNum2, randomOperator);
+  const expressionResult = calc(randomNum1, randomNum2, randomOperator);
 
-  return [String(expression), question];
+  return [String(expressionResult), question];
 };
 
 export default () => playGame(makeCalc, taskGame);
