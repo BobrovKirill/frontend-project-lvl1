@@ -3,7 +3,7 @@ import playGame from '../index.js';
 
 const taskGame = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 
-const isSimpleNumber = (num) => {
+const isPrime = (num) => {
   if (num < 2) {
     return false;
   }
@@ -17,7 +17,7 @@ const isSimpleNumber = (num) => {
 
 const makePrime = () => {
   const question = makeRandomNum();
-  const correctAnswer = isSimpleNumber(question) ? 'yes' : 'no';
+  const correctAnswer = isPrime(question) ? 'yes' : 'no';
   return [correctAnswer, question];
 };
 

@@ -15,10 +15,10 @@ const makeProgression = (start, step, length = 10) => {
 const makeProgressionAnswers = () => {
   const start = makeRandomNum();
   const step = makeRandomNum();
-  const correctAnswer = makeRandomNum(1, progressionLenght);
+  const hiddenElementIndex = makeRandomNum(1, progressionLenght);
   const progression = makeProgression(start, step);
-  const answer = progression[correctAnswer];
-  progression[correctAnswer] = '..';
+  const answer = progression[hiddenElementIndex];
+  progression[hiddenElementIndex] = '..';
   const question = (progression.join(','));
 
   return [String(answer), question];
